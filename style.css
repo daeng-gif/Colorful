@@ -1,0 +1,16 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: lightseagreen;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

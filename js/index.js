@@ -1,4 +1,3 @@
-//이게 맞아
 const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
                 '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
                 '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
@@ -10,19 +9,9 @@ const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
                 '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
                 '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 const clickBtn = document.querySelector(".container:last-child");
+const randomColor = colors[Math.floor(Math.random()*colors.length)];
 
-//색깔 바꾸는 함수 만들기
-//이제는 여기에 array 로 만들면 됨
 function changeColor() {
     console.log("hi");
-    document.body.style.backgroundColor = "red";
-    //clickBtn.style.color = "red";
+    document.body.style.backgroundColor = randomColor;
 };
-
-/*
-function change() {
-    document.clickBtn.style.backgroundColor = "blue";
-}
-change()
-// document.addEventListener()
-*/
